@@ -1,4 +1,5 @@
 SQL Project: A Mini Freelance Platform Database
+
 Hey there! Welcome to this little SQL project. Think of it as a simple, behind-the-scenes look at how a freelance platform like Upwork or Fiverr might work, all built with SQL. If you've ever wondered how these sites manage all their users, jobs, and reviews, this project breaks it down into the basic building blocks.
 
 I created this to practice and demonstrate how to structure a database for a real-world scenario. You'll get to see exactly how tables for clients, freelancers, gigs, and proposals all connect and interact with each other. It's a great way to see fundamental SQL concepts like table creation, primary/foreign keys, and JOINs in action!
