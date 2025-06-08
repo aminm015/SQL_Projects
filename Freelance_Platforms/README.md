@@ -3,7 +3,8 @@ Hey there! Welcome to this little SQL project. Think of it as a simple, behind-t
 
 I created this to practice and demonstrate how to structure a database for a real-world scenario. You'll get to see exactly how tables for clients, freelancers, gigs, and proposals all connect and interact with each other. It's a great way to see fundamental SQL concepts like table creation, primary/foreign keys, and JOINs in action!
 
-What's Inside? 📂
+What's Inside? 
+
 This project is broken down into three main SQL files, each with a specific job to do. It's best to run them in order!
 
 Create Tables.sql: This script is the architect of our database. It builds the entire structure from the ground up, setting up all the tables (like Clients, Freelancers, Gigs, etc.). More importantly, it defines the data types for each column (like text, numbers, dates) and establishes the relationships between the tables using primary and foreign keys. It's the essential blueprint for everything!
@@ -31,7 +32,8 @@ Add the data: Now, open the Insert Values.sql file and run that script. This wil
 
 Ask away!: You're all set! Open the Queries.sql file. You can run any of the queries there to see the results. Even better, try tweaking them or writing some of your own to answer new questions you think of!
 
-A Quick Look at the Database Schema 🗺
+A Quick Look at the Database Schema 
+
 Here's a simple breakdown of the tables and the role each one plays in our mini freelance world:
 
 Clients: Stores information about the people posting jobs. This is where every project on the platform begins.
