@@ -1,81 +1,58 @@
-SQL Query Analysis of Taiwanese Bankruptcy Data
+# Company Bankruptcy Prediction SQL 📉🏦
 
-This project contains a collection of SQL queries designed for the analysis of a financial dataset concerning company bankruptcy in Taiwan. The queries are used to identify key financial indicators, compare bankrupt and non-bankrupt companies, and flag firms that may be at financial risk.
+Hey there! Welcome to my SQL project for analyzing company bankruptcy data in Taiwan.
 
+This set of queries is all about digging into financial data to spot what might signal a company heading for trouble. If you love data, finance, and SQL, you’ll enjoy poking around!
 
-Dataset
-The queries are written for the "Taiwanese Bankruptcy Prediction" dataset from the UCI Machine Learning Repository. The data was collected from the Taiwan Economic Journal from 1999 to 2009. It is assumed that the data is loaded into a SQL table named bankruptcy_data.
+---
 
-The dataset contains 96 attributes. For clarity and ease of use in SQL, the queries use the following mapping:
+## 📊 What’s This All About?
 
-Y: The class label (Bankrupt?: 1 if bankrupt, 0 otherwise).
+This project uses the “Taiwanese Bankruptcy Prediction” dataset from the UCI Machine Learning Repository (collected from 1999–2009). With 96 attributes for each company, there’s a ton to explore!
 
-X1 through X95: The input features, which are various financial ratios.
+- **Y** = Is the company bankrupt? (1 = Yes, 0 = No)
+- **X1 – X95** = All sorts of financial ratios and indicators
 
-Key Features Referenced in Queries:
+---
 
-X1: ROA(C) before interest and depreciation before interest
+## 🔑 Key Features Highlighted in the Queries
 
-X4: Operating Gross Margin
+- **ROA (X1):** Return on Assets, before interest & depreciation
+- **Operating Gross Margin (X4)**
+- **Operating Profit Rate (X6)**
+- **R&D Expense Rate (X12)**
+- **Cash Flow Rate (X13)**
+- **Total Asset Growth Rate (X29)**
+- **Current Ratio (X33)**
+- **Debt Ratio % (X37)**
+- **Net Worth/Assets (X38)**
+- **Liability-Assets Flag (X85):** 1 if liabilities > assets
+- **Degree of Financial Leverage (X92)**
+- **Net Income Flag (X94):** 1 if net income is negative for last 2 years
 
-X6: Operating Profit Rate
+---
 
-X12: Research and development expense rate
+## ❓ What Questions Can You Answer?
 
-X13: Cash flow rate
+With the provided SQL scripts, you can easily:
 
-X29: Total Asset Growth Rate
+- Find all bankrupt companies
+- Spot companies where liabilities are bigger than assets
+- See who’s had negative net income for two years
+- List companies with high debt or low current ratio
+- Get averages of important financial ratios
+- Compare bankrupt vs. non-bankrupt company stats
+- Find the most (and least) profitable companies
+- …and more!
 
-X33: Current Ratio
+---
 
-X37: Debt ratio %
+## 🚦 Example Queries
 
-X38: Net worth/Assets
+- Who has the highest debt ratio?
+- What’s the bankruptcy rate when liabilities exceed assets?
+- Which non-bankrupt companies have the worst profit rate?
+- What’s the average ROA in different leverage categories?
+- Show risky companies based on certain financial red flags
 
-X85: Liability-Assets Flag (1 if Total Liability > Total Assets)
-
-X92: Degree of Financial Leverage (DFL)
-
-X94: Net Income Flag (1 if Net Income is Negative for the last two years)
-
-SQL Queries questions 
-
-Select all companies that went bankrupt.
-
-Select all companies where Total Liabilities exceed Total Assets.
-
-Find all companies with negative net income for the last two years.
-
-Select companies with a Debt Ratio greater than 50%.
-
-Show the ROA and Operating Gross Margin for all companies.
-
-Select companies with a Current Ratio less than 1.
-
-Find the average Cash Flow Rate for all companies.
-
-Show all companies with a negative Operating Profit Rate.
-
-Select companies with a high R&D Expense Rate (>10%).
-
-Select companies with a negative Total Asset Growth Rate.
-
-Which company has the highest Debt Ratio?
-
-Which non-bankrupt company has the lowest Debt Ratio?
-
-Select key financial ratios, sorted by the Net Worth/Assets ratio.
-
-Select the top 10 most profitable companies by Operating Profit Rate.
-
-Select the 5 non-bankrupt companies with the worst Operating Profit Rate.
-
-Find the average Debt Ratio for bankrupt vs. non-bankrupt companies.
-
-Count companies in different risk categories based on their Current Ratio.
-
-What is the bankruptcy rate for companies where Liabilities exceed Assets?
-
-Calculate the average ROA for each Degree of Financial Leverage category.
-
-Identify potentially troubled (but not bankrupt) companies based on high debt and negative income flags.
+---
